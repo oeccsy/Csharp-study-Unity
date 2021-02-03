@@ -11,18 +11,46 @@ public class TransformController : MonoBehaviour
     }
 
     float timer = 0f;
+    
+    [SerializeField]
+    private Transform lookingObject;
 
     void Update()
     {
         timer += Time.deltaTime;
-        Rotatef(new Vector3(0f, (Mathf.Cos(timer)*0.5f+0.5f)*360f, 0f));
+        LookObject(lookingObject);
+        Scaling(new Vector3(Mathf.Cos(timer)+2f, 2f, 2f));
+    }
+
+
+    //크기 조절
+
+    public void Scaling(Vector3 newScale)
+    {
+        transform.localScale = newScale;
+    }
+
+
+    //Forward, LookPosition
+
+    public void RotateControlForward(Vector3 dir)
+    {
+        transform.forward = dir; //바라보는 방향을 정하는 방법
+    }
+
+    public void LookPosition(Vector3 pos)
+    {
+        transform.LookAt(pos); //바라보는 위치를 정하는 방법
+    }
+
+    public void LookObject(Transform lookObj)
+    {
+        transform.LookAt(lookObj); //게임 오브젝트를 바라보게 만들 수 도 있음
     }
 
 
 
-
-
-    //각 변환
+    //각 조절
     public void RotateGameObject(Vector3 rotation)
     {
         transform.rotation = Quaternion.Euler(rotation); //Quaternion 대신 Euler 체계를 사용
@@ -37,7 +65,7 @@ public class TransformController : MonoBehaviour
 
 
 
-    //위치 변환
+    //위치 조절
 
     private void MovePosition(Vector3 newPos)
     {
