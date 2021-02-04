@@ -10,7 +10,7 @@ public class CreateObjScript : MonoBehaviour
         new GameObject(); //동적으로 빈 오브젝트 생성
 
         GameObject newObj = new GameObject(); //GameObject 타입의 newObject 변수를 생성
-        newObj.AddComponent<DestroyObjScript> (); //newObject에 새로운 컴포넌트 부착
+        newObj.AddComponent<DestroyObjScript>(); //newObject에 새로운 컴포넌트 부착
         newObj.name = "Add Destroy Component";
     }
 
