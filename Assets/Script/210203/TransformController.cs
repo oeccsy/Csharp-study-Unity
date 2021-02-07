@@ -13,12 +13,12 @@ public class TransformController : MonoBehaviour
     float timer = 0f;
     
     [SerializeField]
-    private Transform lookingObject;
+    //private Transform lookingObject;
 
     void Update()
     {
         timer += Time.deltaTime;
-        LookObject(lookingObject);
+        //LookObject(lookingObject);
         Scaling(new Vector3(Mathf.Cos(timer)+2f, 2f, 2f));
     }
 
