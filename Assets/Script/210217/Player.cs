@@ -28,9 +28,21 @@ public class Player : MonoBehaviour
 
         moveVec = new Vector3(hAxis, 0, vAxis).normalized;
 
+        if(wDown == false)
+        {
+            transform.position += moveVec * speed * Time.deltaTime;
+        }
+        else
+        {
+            transform.position += moveVec * speed * 0.3f * Time.deltaTime;
+        }
+
         transform.position += moveVec * speed * Time.deltaTime;
 
         anim.SetBool("isOpen", moveVec != Vector3.zero); //SetBool() 은 파라메터 값을 설정할 수 있다.
         anim.SetBool("isWalk", wDown);
+
+        transform.LookAt(transform.position + moveVec); //본인이 향하고 있는 위치를 바라보게 만드는 코드
+
     }
 }
