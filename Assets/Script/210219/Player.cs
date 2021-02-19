@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
 
     Rigidbody rigid; // 여기있는 변수들은 Awake에서 초기화시켜준다!
     Animator anim;
+    public AudioSource jumpSound;
 
     void Awake()
     {
@@ -72,6 +73,8 @@ public class Player : MonoBehaviour
             anim.SetBool("isJump", true);
             anim.SetTrigger("doJump");
             isJump = true;
+
+            jumpSound.Play();
         }   
     }
 
