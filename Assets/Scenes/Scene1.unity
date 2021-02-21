@@ -147,7 +147,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60020776}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 170139d41660e1d4f9671a01922469a9, type: 3}
@@ -503,7 +503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3b2ae21a70a7434cb03da4fec19aef2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 1061469462}
+  obj: {fileID: 1061469462}
 --- !u!1 &594455324
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,7 +528,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 594455324}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0fdb976427590c94ea584121bf26b406, type: 3}
@@ -1180,6 +1180,7 @@ GameObject:
   - component: {fileID: 1508520559}
   - component: {fileID: 1508520558}
   - component: {fileID: 1508520557}
+  - component: {fileID: 1508520561}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Floor
@@ -1264,6 +1265,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1508520561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508520556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c073b39d6a2e8a40a656dac8a6f7477, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1592480520
 GameObject:
   m_ObjectHideFlags: 0
