@@ -42,7 +42,7 @@ public class InputClass : MonoBehaviour
 
         //Debug.Log("GetAxis : " + Input.GetAxis("Vertical"));
 
-        Debug.Log("점프 : " + Input.GetAxis("Jump"));
+        //Debug.Log("점프 : " + Input.GetAxis("Jump"));
 
 
     }
