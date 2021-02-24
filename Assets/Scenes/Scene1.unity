@@ -1219,6 +1219,7 @@ GameObject:
   - component: {fileID: 1508520558}
   - component: {fileID: 1508520557}
   - component: {fileID: 1508520561}
+  - component: {fileID: 1508520562}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Floor
@@ -1315,6 +1316,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c073b39d6a2e8a40a656dac8a6f7477, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1508520562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508520556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9513dd5f8f87003428761438adf80945, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  black: {fileID: 2100000, guid: 8e9b151b1050a904281db47c306f0248, type: 2}
+  white: {fileID: 2100000, guid: c1617ae345b46dc41a48744112fb001c, type: 2}
 --- !u!1 &1592480520
 GameObject:
   m_ObjectHideFlags: 0
@@ -1407,6 +1422,7 @@ GameObject:
   - component: {fileID: 1927862138}
   - component: {fileID: 1927862137}
   - component: {fileID: 1927862141}
+  - component: {fileID: 1927862142}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1506,6 +1522,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
+--- !u!114 &1927862142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927862136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1df57fa787f77445b780847f9e35847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!850595691 &1940031968
 LightingSettings:
   m_ObjectHideFlags: 0
