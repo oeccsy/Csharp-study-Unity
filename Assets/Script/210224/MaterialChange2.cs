@@ -37,4 +37,24 @@ public class MaterialChange2 : MonoBehaviour
         Debug.Log("color : " + color);
             
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name == "MovingRibbonBox") //충돌한 gameobject의 name으로 구별하여 material을 변경하는 코드
+        {
+            mesh.material = black;
+            material = gameObject.GetComponent<MeshRenderer>().material;
+            color = material.color; //Material이 바뀌면 material, color를 다시 초기화 해줘야 투명도 변함 
+        }
+       
+    }
+
+    void OnTriggerStay(Collider collider) //Trigger를 이용하여 투명도 조절
+    {
+        
+        if (collider.name == "Cube")
+        {
+            color.a -= 0.01f; 
+        }
+    }
 }
